@@ -20,8 +20,8 @@ services:
     
   jenkins-service:
     ports:
-      - 8001:8080"
-      - 50000:50000"
+      - 8001:8080
+      - 50000:50000
     volumes:
       - /var/jenkins_home
     image: jenkinsci/jenkins
