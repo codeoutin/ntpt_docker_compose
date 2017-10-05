@@ -1,0 +1,28 @@
+version: '3'
+services:
+	mongodb-service:
+		ports:
+			- 27017:8003
+		volumes:
+			- .:/code
+			- /var/mongodb_home
+		image: mongo
+
+	
+	gitlab-service:
+		ports:
+			- 80:8002
+			- 22:8004
+		volumes:
+			- /srv/gitlab/config:/etc/gitlab
+			- /srv/gitlab/logs:/var/log/gitlab
+			- /srv/gitlab/data:/var/opt/gitlab
+		image: gitlab/gitlab-ce:latest
+	
+	jenkins-service:
+		ports:
+			- 8080:8001"
+			- 50000:50000"
+		volumes:
+			- /var/jenkins_home
+		image: jenkinsci/jenkins
