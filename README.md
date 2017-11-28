@@ -21,4 +21,4 @@ To start the containers:
 `docker compose up -d`
 4. Wait 3-5 minutes
 
-
+To stop the containers simply run the command `docker-compose stop`
