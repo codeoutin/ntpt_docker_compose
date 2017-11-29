@@ -26,7 +26,7 @@ To start the containers:
 2. Switch to the nt_docker folder
 `cd /usr/docker/nt_docker`
 3. And run the containers (in Background mode) with
-`docker compose up -d`
+`docker-compose up -d`
 4. Wait 3-5 minutes
 
 To stop the containers simply run the command `docker-compose stop`
