@@ -1,5 +1,16 @@
 # nt_docker
 [![N](https://www.novatec-gmbh.de/fileadmin/styles/novatec_v5.5/images/header-logo.jpg)](https://www.novatec-gmbh.de/)
+This is a Docker Compose file, which installs a Code Environment Server.
+Current the following containers are included
+* Jenkins CI Server
+* GitLab Server
+* MongoDB Database
+
+## Install
+1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
+2. Clone the file by using command `git clone https://github.com/stegerpa/nt_docker.git && cd nt_docker`
+3. You are ready to use the nt_docker Testenvironment Setup
+
 
 ## Containers
 
