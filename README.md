@@ -17,7 +17,7 @@ Current the following containers are included
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
 2. Clone the file by using command `git clone https://github.com/stegerpa/nt_docker.git && cd nt_docker`
-3. You are ready to use the nt_docker Testenvironment Setup
+3. Make sure to install (Docker Compose)[https://github.com/docker/compose/releases]
 
 ## Start Containers
 To start the containers:
