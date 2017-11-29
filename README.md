@@ -7,12 +7,6 @@ Current the following containers are included
 * GitLab Server
 * MongoDB Database
 
-## Install
-1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
-2. Clone the file by using command `git clone https://github.com/stegerpa/nt_docker.git && cd nt_docker`
-3. You are ready to use the nt_docker Testenvironment Setup
-
-
 ## Containers
  Service | Address 
  --- | ---
@@ -20,6 +14,10 @@ Current the following containers are included
  GitLab | http://localhost:8002
  MongoDB | http://localhost:8003
 
+## Install
+1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
+2. Clone the file by using command `git clone https://github.com/stegerpa/nt_docker.git && cd nt_docker`
+3. You are ready to use the nt_docker Testenvironment Setup
 
 ## Start Containers
 To start the containers:
