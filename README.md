@@ -1,5 +1,6 @@
 # nt_docker
 [![N](https://www.novatec-gmbh.de/fileadmin/styles/novatec_v5.5/images/header-logo.jpg)](https://www.novatec-gmbh.de/)
+
 This is a Docker Compose file, which installs a Code Environment Server.
 Current the following containers are included
 * Jenkins CI Server
@@ -13,7 +14,6 @@ Current the following containers are included
 
 
 ## Containers
-
  Service | Address 
  --- | ---
  Jenkins | http://localhost:8001
@@ -22,7 +22,6 @@ Current the following containers are included
 
 
 ## Start Containers
-
 To start the containers:
 1. Make sure Docker is running
 `sudo systemctl start docker`
