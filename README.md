@@ -1,5 +1,4 @@
-# nt_docker
-[![N](https://www.novatec-gmbh.de/fileadmin/styles/novatec_v5.5/images/header-logo.jpg)](https://www.novatec-gmbh.de/)
+# NTPT Docker Compose
 
 This is a Docker Compose file, which installs a Code Environment Server.
 Current the following containers are included
