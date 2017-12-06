@@ -28,7 +28,7 @@ services:
 
   sonarqube-service:
      ports:
-       - "8003:9000"
+       - "8004:9000"
        - "9092:9092"
      environment:
        - SONARQUBE_JDBC_USERNAME=pse
