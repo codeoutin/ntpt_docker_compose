@@ -40,7 +40,7 @@ services:
        - /var/sonarqube_home
      image: "sonarqube"
      
-db:
+  db:
     image: postgres
     networks:
       - sonarnet
