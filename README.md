@@ -12,6 +12,7 @@ Current the following containers are included
  Jenkins | http://localhost:8001
  GitLab | http://localhost:8002
  MongoDB | http://localhost:8003
+ SonarQube | http://localhost:8004
 
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
