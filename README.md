@@ -5,6 +5,7 @@ Current the following containers are included
 * Jenkins CI Server
 * GitLab Server
 * MongoDB Database
+* SonarQube Quality Gate
 
 ## Containers
  Service | Address 
