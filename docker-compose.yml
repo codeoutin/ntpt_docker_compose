@@ -9,6 +9,10 @@ services:
     image: "mongo"
 
   gitlab-service:
+    hostname: "gitlab-service"
+    environment:
+      - GITLAB_HOST=gitlab-service
+      - GITLAB_PORT=8002
     ports:
       - "8002:80"
       - "8022:22"
