@@ -24,7 +24,7 @@ services:
       - "50000:50000"
     volumes:
       - /var/jenkins_home
-    image: "jenkinsci/jenkins"
+    image: "stegerpa/jenkins"
 
   sonarqube-service:
     ports:
