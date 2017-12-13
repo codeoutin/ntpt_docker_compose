@@ -3,6 +3,7 @@
 This is a Docker Compose file, which installs a Code Environment Server.
 Current the following containers are included
 * [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/)
+** Credentials are admin:admin
 * GitLab Server
 * MongoDB Database
 * SonarQube Quality Gate
