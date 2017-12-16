@@ -4,6 +4,8 @@ services:
   mongodb-service:
     ports:
       - "8003:27017"
+    networks:
+      - cinetwork
     volumes:
       - /var/mongodb_home
     image: "mongo"
@@ -16,6 +18,8 @@ services:
     ports:
       - "8002:80"
       - "8022:22"
+    networks:
+      - cinetwork
     volumes:
       - /srv/gitlab/config:/etc/gitlab
       - /srv/gitlab/logs:/var/log/gitlab
@@ -26,6 +30,8 @@ services:
     ports:
       - "8001:8080"
       - "50000:50000"
+    networks:
+      - cinetwork
     volumes:
       - /var/jenkins_home
     image: "stegerpa/jenkins"
@@ -60,4 +66,6 @@ services:
 
 networks:
   sonarnet:
+    driver: bridge
+  cinetwork:
     driver: bridge
