@@ -1,5 +1,8 @@
 version: '3'
 
+volumes:
+  jenkins-data:
+
 services:
   mongodb-service:
     ports:
@@ -33,7 +36,9 @@ services:
     networks:
       - cinetwork
     volumes:
-      - /var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - jenkins-data:/var/lib/jenkins/
     image: "stegerpa/jenkins"
 
   sonarqube-service:
