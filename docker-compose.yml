@@ -77,7 +77,7 @@ services:
       - "4550:4550"
     volumes: 
       - /var/run/docker.sock:/tmp/docker.sock
-    command: sherpa -- allow
+    command: "-- allow"
       
 networks:
   sonarnet:
