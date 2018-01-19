@@ -77,7 +77,8 @@ services:
       - "4550:4550"
     volumes: 
       - /var/run/docker.sock:/tmp/docker.sock
-    entrypoint: -- allow
+    entrypoint: 
+      - allow
       
 networks:
   sonarnet:
