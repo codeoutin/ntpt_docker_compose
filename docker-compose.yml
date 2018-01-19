@@ -72,13 +72,13 @@ services:
       - /var/lib/postgresql/data
   
   docker-api:
-    image: "djenriquez/sherpa"
     ports: 
       - "4550:4550"
     volumes: 
       - /var/run/docker.sock:/tmp/docker.sock
-    entrypoint: 
-      - allow
+    environment:
+            - 'CONFIG=[ { "Path" : "/", "Access": "allow" } ]'
+    image: "djenriquez/sherpa"
       
 networks:
   sonarnet:
