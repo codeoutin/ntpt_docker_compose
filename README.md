@@ -7,6 +7,7 @@ Current the following containers are included
 * GitLab Server
 * MongoDB Database
 * SonarQube Quality Gate
+* Sherpa Docker API 
 
 ## Containers
  Service | Address 
@@ -15,6 +16,7 @@ Current the following containers are included
  GitLab | http://localhost:8002
  MongoDB | http://localhost:8003
  SonarQube | http://localhost:8004
+ Docker API | http://localhost:4550
 
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
