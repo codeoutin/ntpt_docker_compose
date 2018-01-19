@@ -33,7 +33,8 @@ services:
     image: "gitlab/gitlab-ce:latest"
   
   mongodb-service:
-    ports: "8003:27017"
+    ports: 
+      - "8003:27017"
     networks: 
       - cinetwork
     volumes: 
