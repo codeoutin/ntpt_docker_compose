@@ -4,15 +4,17 @@ volumes:
   jenkins-data:
 
 services:
-  mongodb-service:
+  jenkins-service:
     ports:
-      - "8003:27017"
-    networks:
-      - cinetwork
+      - "8001:8080"
+      - "50000:50000"
+    networks: - cinetwork
     volumes:
-      - /var/mongodb_home
-    image: "mongo"
-
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - jenkins-data:/var/lib/jenkins/
+    image: "stegerpa/jenkins"
+  
   gitlab-service:
     hostname: "gitlab-service"
     environment:
@@ -21,38 +23,29 @@ services:
     ports:
       - "8002:80"
       - "8022:22"
-    networks:
-      - cinetwork
+    networks: - cinetwork
     volumes:
       - /srv/gitlab/config:/etc/gitlab
       - /srv/gitlab/logs:/var/log/gitlab
       - /srv/gitlab/data:/var/opt/gitlab
     image: "gitlab/gitlab-ce:latest"
-    
-  jenkins-service:
-    ports:
-      - "8001:8080"
-      - "50000:50000"
-    networks:
-      - cinetwork
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/bin/docker:/usr/bin/docker
-      - jenkins-data:/var/lib/jenkins/
-    image: "stegerpa/jenkins"
+  
+  mongodb-service:
+    ports: - "8003:27017"
+    networks: - cinetwork
+    volumes: - /var/mongodb_home
+    image: "mongo"
 
   sonarqube-service:
     ports:
       - "8004:9000"
       - "9092:9092"
-    networks:
-      - sonarnet
+    networks: - sonarnet
     environment:
       - SONARQUBE_JDBC_USERNAME=sonar
       - SONARQUBE_JDBC_PASSWORD=sonar
       - SONARQUBE_JDBC_URL=jdbc:postgresql://sonarqube-db:5432/sonar
-    depends_on:
-      - sonarqube-db
+    depends_on: - sonarqube-db
     volumes:
       - /opt/sonarqube/conf
       - /opt/sonarqube/data
@@ -62,15 +55,20 @@ services:
      
   sonarqube-db:
     image: postgres
-    networks:
-      - sonarnet
+    networks: - sonarnet
     environment:
       - POSTGRES_USER=sonar
       - POSTGRES_PASSWORD=sonar
     volumes:
       - /var/lib/postgresql
       - /var/lib/postgresql/data
-
+  
+  docker-api:
+    image: djenriquez/sherpa
+    ports: - "4550:4550"
+    volumes: - /var/run/docker.sock:/tmp/docker.sock
+    command: -- allow
+      
 networks:
   sonarnet:
     driver: bridge
