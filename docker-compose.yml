@@ -65,7 +65,7 @@ services:
   
   docker-api:
     image: djenriquez/sherpa
-    ports: - "4550:4550"
+    ports: "4550:4550"
     volumes: /var/run/docker.sock:/tmp/docker.sock
     command: -- allow
       
