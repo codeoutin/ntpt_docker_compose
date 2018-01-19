@@ -77,7 +77,7 @@ services:
     volumes: 
       - /var/run/docker.sock:/tmp/docker.sock
     environment:
-            - 'CONFIG=[ { "Path" : "/", "Access": "allow" } ]'
+            - 'CONFIG=[ { "Path" : "*", "Access": "allow" } ]'
     image: "djenriquez/sherpa"
       
 networks:
