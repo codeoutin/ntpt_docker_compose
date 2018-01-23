@@ -58,6 +58,7 @@ services:
       - /opt/sonarqube/data
       - /opt/sonarqube/extensions
       - /opt/sonarqube/lib/bundled-plugins
+      - ./extensions:/opt/sonarqube/extensions
     image: "sonarqube"
      
   sonarqube-db:
