@@ -4,10 +4,10 @@ This is a Docker Compose file, which installs a Code Environment Server.
 Current the following containers are included
 * [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/)
   * Login credentials: admin / admin
-* GitLab Server
-* MongoDB Database
-* SonarQube Quality Gate
-* Sherpa Docker API 
+* [GitLab CE Server](https://hub.docker.com/r/gitlab/gitlab-ce/)
+* [MongoDB Database](https://hub.docker.com/_/mongo/)
+* [SonarQube Server](https://hub.docker.com/_/sonarqube/)
+* [Sherpa Docker API](https://hub.docker.com/r/djenriquez/sherpa/)
 
 ## Containers
  Service | Address 
