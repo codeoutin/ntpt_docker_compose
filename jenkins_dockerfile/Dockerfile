@@ -6,8 +6,8 @@ FROM jenkins:alpine
 # Disable Setup Wizard
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
-# Create Admin User
-COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
+# Create Admin User (disabled because Security is disabled)
+# COPY security.groovy /usr/share/jenkins/ref/init.groovy.d/security.groovy
 
 # Copy Plugin List and Install Plugins from List
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
