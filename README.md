@@ -1,8 +1,8 @@
 # NTPT Docker Compose
 
 This is a Docker Compose file, which setup a Prototype Environment for developers. Its part of NTPT, so you probably also want to use
-* [https://github.com/stegerpa/ntpt_frontend_react](NTPT Frontend)
-* [https://github.com/stegerpa/ntpt_camunda_server](NTPT Backend (Server))
+* [NTPT Frontend](https://github.com/stegerpa/ntpt_frontend_react)
+* [NTPT Backend (Server)](https://github.com/stegerpa/ntpt_camunda_server)
 
 Current the following containers are included
 * [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/)
