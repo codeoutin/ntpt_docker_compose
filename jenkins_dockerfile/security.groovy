@@ -1,5 +1,8 @@
 #!groovy
 
+#Author: Patrick Steger
+#Create Admin user, currently unused because Security is disabled
+
 import jenkins.model.*
 import hudson.security.*
 import jenkins.security.s2m.AdminWhitelistRule
