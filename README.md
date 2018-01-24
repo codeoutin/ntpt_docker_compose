@@ -4,7 +4,7 @@ This is a Docker Compose file, which setup a Prototype Environment for developer
 * [NTPT Frontend](https://github.com/stegerpa/ntpt_frontend_react)
 * [NTPT Backend (Server)](https://github.com/stegerpa/ntpt_camunda_server)
 
-Current the following containers are included
+Currently the following containers are included
 * [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/)
 * [GitLab CE Server](https://hub.docker.com/r/gitlab/gitlab-ce/)
 * [MongoDB Database](https://hub.docker.com/_/mongo/)
