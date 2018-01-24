@@ -12,13 +12,13 @@ Current the following containers are included
 * [Sherpa Docker API](https://hub.docker.com/r/djenriquez/sherpa/)
 
 ## Containers
- Service | Address | Additional Description
+ Service | Address | Description
  --- | --- | ---
- Custom Jenkins | http://localhost:8001 | Default Login: admin/admin, Security Disabled
- GitLab | http://localhost:8002 | 
- MongoDB | http://localhost:8003 | 
- SonarQube | http://localhost:8004 | Default Login: admin/admin
- Docker API | http://localhost:4550 | 
+ Custom Jenkins | http://localhost:8001 | Default Login: admin::admin, Security Disabled
+ GitLab | http://localhost:8002 | Create User at first Start
+ MongoDB | http://localhost:8003 | Security disabled
+ SonarQube | http://localhost:8004 | Default Login: admin::admin
+ Docker API | http://localhost:4550 | Security disabled
 
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
