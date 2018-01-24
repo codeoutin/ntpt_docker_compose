@@ -6,20 +6,19 @@ This is a Docker Compose file, which setup a Prototype Environment for developer
 
 Current the following containers are included
 * [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/)
-  * Login credentials: admin / admin
 * [GitLab CE Server](https://hub.docker.com/r/gitlab/gitlab-ce/)
 * [MongoDB Database](https://hub.docker.com/_/mongo/)
 * [SonarQube Server](https://hub.docker.com/_/sonarqube/)
 * [Sherpa Docker API](https://hub.docker.com/r/djenriquez/sherpa/)
 
 ## Containers
- Service | Address 
- --- | ---
- Jenkins | http://localhost:8001
- GitLab | http://localhost:8002
- MongoDB | http://localhost:8003
- SonarQube | http://localhost:8004
- Docker API | http://localhost:4550
+ Service | Address | Additional Description
+ --- | --- | ---
+ Custom Jenkins | http://localhost:8001 | Default Login: admin/admin, Security Disabled
+ GitLab | http://localhost:8002 | 
+ MongoDB | http://localhost:8003 | 
+ SonarQube | http://localhost:8004 | Default Login: admin/admin
+ Docker API | http://localhost:4550 | 
 
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
