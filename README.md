@@ -7,6 +7,7 @@ This is a Docker Compose file, which setup a Prototype Environment for developer
 ## Containers
 
 Currently the following containers are included
+
 Service | Address | Description
 ---|---|---
 [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/) | http://localhost:8001 | Default Login `admin:admin`, Security Disabled
