@@ -1,6 +1,6 @@
 # Customized Jenkins
 
-This Jenkins Image is build on jenkins:alpine.
+This Jenkins Image is build on [jenkins:alpine](https://hub.docker.com/_/jenkins/).
 Modifications made:
 * Install Plugins
 * Disable Security
