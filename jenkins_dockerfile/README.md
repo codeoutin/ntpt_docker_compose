@@ -1,6 +1,6 @@
 # Customized Jenkins
 
-This Jenkins Image is build on [jenkins:alpine](https://hub.docker.com/_/jenkins/).
+This Jenkins Image is build on [jenkins:alpine](https://hub.docker.com/_/jenkins/). The Image is hosted in [Docker Hub](https://hub.docker.com/r/stegerpa/jenkins/)
 Modifications made:
 * Install Plugins
 * Disable Security
@@ -10,6 +10,6 @@ Modifications made:
 
 ## Build
 
-To build the image use
-`docker image build -t stegerpa/jenkins .`
-`docker image push stegerpa/jenkins`
+To build and push the image use
+* Build: `docker image build -t stegerpa/jenkins .`
+* Push: `docker image push stegerpa/jenkins`
