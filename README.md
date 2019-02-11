@@ -1,6 +1,6 @@
-# NTPT Docker Compose
+# NTPT Docker Environment
 
-This is a Docker Compose file, which setup a Prototype Environment for developers. Its part of NTPT, so you probably also want to use
+This is a Docker Compose file, that sets up a Prototype Environment for developers. Its part of NTPT you probably also want to use:
 * [NTPT Frontend](https://github.com/stegerpa/ntpt_frontend_react)
 * [NTPT Backend (Server)](https://github.com/stegerpa/ntpt_camunda_server)
 
