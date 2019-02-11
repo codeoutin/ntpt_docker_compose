@@ -35,8 +35,8 @@ To start the containers:
 
 To stop the containers simply run the command `docker-compose stop`
 
-## Alternatives to GitLab
-This Project is created as part of my Bachelor Thesis. Since GitLab needs a lot of memory and CPU power to run, you could also try out some Alternative Git Services (not tested):
+### Alternatives to GitLab
+Since GitLab needs a lot of memory and CPU power to run, you could also try out some Alternative Git Services (not tested):
 * [Gogs.io](https://gogs.io/)
 * [GitBucket](https://github.com/gitbucket/gitbucket)
 * [Gitolite](http://gitolite.com/gitolite/)
