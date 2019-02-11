@@ -10,13 +10,13 @@ This is a Docker Compose file, to set up a common Environment for developers, co
 
 Currently the following containers are included
 
-Service | Address | Description
----|---|---
-[Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/) | http://localhost:8001 | Default Login `admin:admin`, Security Disabled
-[GitLab CE Server](https://hub.docker.com/r/gitlab/gitlab-ce/) | http://localhost:8002 | Create User at first Start
-[MongoDB Database](https://hub.docker.com/_/mongo/) | http://localhost:8003 | Security disabled
-[SonarQube Server](https://hub.docker.com/_/sonarqube/) | http://localhost:8004 | Default Login `admin:admin`
-[Sherpa Docker API](https://hub.docker.com/r/djenriquez/sherpa/) | http://localhost:4550 | Security disabled
+Component | Application | Default Address | Description
+---|---|---|---
+Build Server | [Customized Jenkins CI Server](https://hub.docker.com/r/stegerpa/jenkins/) | http://localhost:8001 | Default Login `admin:admin`, Security Disabled
+Git Server | [GitLab CE Server](https://hub.docker.com/r/gitlab/gitlab-ce/) | http://localhost:8002 | Create User at first Start
+Database | [MongoDB Database](https://hub.docker.com/_/mongo/) | http://localhost:8003 | Security disabled
+Code Quality | [SonarQube Server](https://hub.docker.com/_/sonarqube/) | http://localhost:8004 | Default Login `admin:admin`
+API | [Sherpa Docker API](https://hub.docker.com/r/djenriquez/sherpa/) | http://localhost:4550 | Security disabled
 
 ## Install
 1. Type command `mkdir /usr/docker && cd /usr/docker` to create the directory, where we store the yaml file
@@ -36,7 +36,7 @@ To start the containers:
 To stop the containers simply run the command `docker-compose stop`
 
 ## Alternatives to GitLab
-This Project is created as part of my Bachelor Thesis. Since GitLab needs a lot of memory and CPU power to run, you could also try out some Alternative Git Services:
+This Project is created as part of my Bachelor Thesis. Since GitLab needs a lot of memory and CPU power to run, you could also try out some Alternative Git Services (not tested):
 * [Gogs.io](https://gogs.io/)
 * [GitBucket](https://github.com/gitbucket/gitbucket)
 * [Gitolite](http://gitolite.com/gitolite/)
