@@ -1,8 +1,10 @@
 # NTPT Docker Environment
 
-This is a Docker Compose file, that sets up a Prototype Environment for developers. Its part of NTPT you probably also want to use:
+This is a Docker Compose file, to set up a common Environment for developers, containing a git server, a build server, a database, a code quality tool and an API to extend the environment. Its part of NTPT you probably also want to use:
 * [NTPT Frontend](https://github.com/stegerpa/ntpt_frontend_react)
 * [NTPT Backend (Server)](https://github.com/stegerpa/ntpt_camunda_server)
+
+:warning: This is a prototype and many important security features are disabled - do not use this in production!
 
 ## Containers
 
